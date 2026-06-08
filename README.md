@@ -1,18 +1,21 @@
-# 직통 (直 · 通)
+# 발표자료 모음
 
-> 직군과 직통으로 통한다 — 슬랙에서 한 번의 멘션으로, 개발자의 말이 마케터의 말이 된다.
+팀 발표자료를 모아 GitHub Pages로 배포하는 정적 사이트입니다.
 
-AX Project · Team 03 의 슬라이드 덱입니다. 슬랙에서 `@직통`을 멘션하면 전문 용어가 섞인 메시지를 누구나 이해할 수 있는 말로 풀어 같은 스레드에 답해주는 서비스를 소개합니다.
+🔗 **https://frontleejonghun.github.io/jiktong-html/**
 
-## 실행
+## 구성
 
-`index.html`을 브라우저로 열면 됩니다. 별도 빌드 과정은 없습니다.
+| 경로 | 내용 |
+| --- | --- |
+| `/` | 발표자료 목록 (랜딩) |
+| `/jiktong/` | 직통 (直·通) — 직군과 직통으로 통한다 · AX Project Team 03 |
+| `/knowbis/` | 노비스 (Knowbis) — 전사 월간리뷰 |
+| `/piewatch/` | PieWatch 🐶 — 우리 서버를 지켜보는 강아지 |
 
-```bash
-open index.html
-```
+각 발표자료는 `<디렉토리>/index.html` 단일 정적 파일이며 별도 빌드가 없습니다.
 
-## 조작
+## 조작 (직통 덱)
 
 | 키 | 동작 |
 | --- | --- |
@@ -23,4 +26,4 @@ open index.html
 
 ## 배포
 
-루트의 정적 `index.html`을 그대로 서빙합니다. (Vercel)
+`main` 브랜치 루트(`/`)를 GitHub Pages가 그대로 서빙합니다. `main`에 push하면 자동 반영됩니다. (`.nojekyll`로 Jekyll 처리는 비활성화)
